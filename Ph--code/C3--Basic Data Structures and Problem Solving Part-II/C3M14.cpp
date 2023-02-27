@@ -79,17 +79,6 @@ public:
         return size;
     }
 
-     // Delete value At head 
-    void deleteAtHead(){
-        if(head==NULL) return;
-        node* a = head;
-        node* b = a->next;
-        if(b != NULL) b->prv = NULL;
-        head = b;
-        delete a;
-        size--;
-    }
-
     // Delete Node At any index
     void deleteNode(int index){
         if (index<0 || index > size-1) return;
