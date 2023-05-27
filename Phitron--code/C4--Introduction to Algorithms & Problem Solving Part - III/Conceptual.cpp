@@ -1,6 +1,30 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+int main(){
+
+
+    return 0;
+
+}
+
+
+
+
+/*
+
+10 8
+1 2
+1 3
+2 4
+3 4
+3 6
+4 6
+6 7
+6 8
+#include <bits/stdc++.h>
+using namespace std;
+
 const int N = 1e5;
 int visited[N];
 vector<int>adj_list[N];
@@ -39,16 +63,5 @@ int main(){
     return 0;
 }
 
-/*
-
-10 8
-1 2
-1 3
-2 4
-3 4
-3 6
-4 6
-6 7
-6 8
 
 */
