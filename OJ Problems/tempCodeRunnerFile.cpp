@@ -1,3 +1,0 @@
-int fib(int n){
-
-// }
