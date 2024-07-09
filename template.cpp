@@ -18,7 +18,7 @@ typedef vector<pii> vii;
 typedef vector<pll> vll;
 typedef double dl;
 
-#define endl '\n'
+#define endl '\n' 
 #define PB push_back
 #define F first
 #define S second
