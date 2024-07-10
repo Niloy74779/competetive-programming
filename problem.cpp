@@ -11,25 +11,14 @@ int main()
 {
     fraction();
     optimize();
-    
-    int arr[1000],n,t;
-    cin >> t;
-    for(int x=0;x<t;x++){
-        cin >> n;
-        for(int i=1; i<=n; i++){
-            cin >> arr[i];
-        }
-        int mx = 10000000;
-        for(int i=1; i<=n; i++){
-            for(int j =i+1; j<=n; j++){
-                int x = (arr[i]+arr[j])+(j-i);
-                if(x<mx) mx = x;
-            }
-        }
-        cout << mx << endl;
-
+    int n;
+    cin >> n;
+    long long int arr[100];
+    arr[1] = 0, arr[2] = 1;
+    for(int i = 3; i<=n; i++){
+        arr[i] = arr[i-1] + arr[i-2];
     }
-
+    cout << arr[n] << endl;
 
 	return 0;
 }
